@@ -1,4 +1,4 @@
-package Array;
+package Array.slidingwindow;
 
 public class SlidingWindow {
 
