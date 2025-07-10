@@ -23,8 +23,6 @@ public class PalindromeCheck {
            }
 
            }
-
-
         return isPalindrome;
     }
 }
