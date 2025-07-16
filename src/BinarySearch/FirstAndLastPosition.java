@@ -9,8 +9,8 @@ package BinarySearch;
 public class FirstAndLastPosition {
 
     public static void main(String[] args) {
-        int[] arr = {5, 7, 7, 8, 8,8,8,8,8,8, 10};
-        int target = 3;
+        int[] arr = {1};
+        int target = 1;
         int[] result = searchRange(arr, target);
         System.out.println("First and Last Position: [" + result[0] + ", " + result[1] + "]");
     }
@@ -23,7 +23,7 @@ public class FirstAndLastPosition {
 
     public static int findFirstPosition(int[] nums, int target){
         int position = -1;
-        int start=1,last=nums.length-1;
+        int start=0,last=nums.length-1;
         while(start <= last){
              int mid= (start+last)/2;
              if(nums[mid] < target) {
@@ -40,7 +40,7 @@ public class FirstAndLastPosition {
 
     public static int findLastPosition(int[] nums, int target){
         int position = -1;
-        int start=1,last=nums.length-1;
+        int start=0,last=nums.length-1;
         while(start<=last){
             int mid= (start+last)/2;
             if(nums[mid] < target) {
