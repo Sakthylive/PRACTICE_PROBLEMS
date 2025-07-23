@@ -1,6 +1,6 @@
 package Tree;
 
-public class BinaryTree {
+public class BinaryTreeUsingReferences {
 
     class Node {
         int data;
@@ -17,13 +17,13 @@ public class BinaryTree {
 
     public static void   main(String[] args) {
         //Creating a binary tree using the Node class --traditional method
-        Node node = new BinaryTree().new Node(1);
-        node.left= new BinaryTree().new Node(2);
-        node.right= new BinaryTree().new Node(3);
-        node.left.left= new BinaryTree().new Node(4);
-        node.left.right= new BinaryTree().new Node(5);
-        node.right.left= new BinaryTree().new Node(6);
-        node.right.right= new BinaryTree().new Node(7);
+        Node node = new BinaryTreeUsingReferences().new Node(1);
+        node.left= new BinaryTreeUsingReferences().new Node(2);
+        node.right= new BinaryTreeUsingReferences().new Node(3);
+        node.left.left= new BinaryTreeUsingReferences().new Node(4);
+        node.left.right= new BinaryTreeUsingReferences().new Node(5);
+        node.right.left= new BinaryTreeUsingReferences().new Node(6);
+        node.right.right= new BinaryTreeUsingReferences().new Node(7);
         System.out.println("Pre-order Traversal:");
        preOrderTraverse(node);
         System.out.println("Post-order Traversal:");
