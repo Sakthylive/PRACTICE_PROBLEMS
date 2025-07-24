@@ -1,7 +1,7 @@
 package Tree;
 
 public class IsSubTreeProblem {
-
+// the complexity here is O(n pow 2) O(n * m)
     public static void main(String[] args) {
         IsSubTreeProblem stp = new IsSubTreeProblem();
         TreeNode node1 = new TreeNode(10);
@@ -22,12 +22,15 @@ public class IsSubTreeProblem {
 
     public boolean isSubtree(TreeNode root, TreeNode subRoot){
         Boolean isSubtree=false;
+        // if both the root nodes are null then it is false
         if(root == null || subRoot==null){
             return false;
         }
+        // if it is same tree, which means root and subroot are exactly same
         else if (isSameTree(root,subRoot)){
             isSubtree=true;
         }else{
+            //else traverse both the sides
            return  isSubtree(root.left,subRoot)||isSubtree(root.right,subRoot);
         }
         return isSubtree;
