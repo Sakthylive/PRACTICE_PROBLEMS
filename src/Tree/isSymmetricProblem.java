@@ -17,6 +17,7 @@ public class isSymmetricProblem {
     public Boolean isSymmetric(TreeNode node){
         return (isSym(node.left,node.right));
     }
+    // to check if the mirror image of Nodes are matching
 
     public boolean isSym(TreeNode node1, TreeNode node2){
         if (node1==null && node2==null) return true;

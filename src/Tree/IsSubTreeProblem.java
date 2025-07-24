@@ -30,7 +30,7 @@ public class IsSubTreeProblem {
         else if (isSameTree(root,subRoot)){
             isSubtree=true;
         }else{
-            //else traverse both the sides
+            //else traverse both the sides and chec if any left of Root is matching with subroot or right of root is matching with subroot
            return  isSubtree(root.left,subRoot)||isSubtree(root.right,subRoot);
         }
         return isSubtree;
