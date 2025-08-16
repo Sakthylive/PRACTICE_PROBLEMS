@@ -1,7 +1,8 @@
 package DynamicProgramming;
 
 public class FibonacciUsingRecursion {
-
+//this method is for finding fibonacci of a given number without using dynamic programming
+    // this will be using recursion
     public static void main(String[] args) {
         FibonacciUsingRecursion fibo = new FibonacciUsingRecursion();
         int n=10;
